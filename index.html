@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+
+    <form action="get" autocomplete="off">
+
+      <div>
+        <label for="incidencia">Numero de incidencia</label>
+        <input type="text" name="incidencia" id="incidencia" minlength="12" maxlength="30" pattern="[0-9 Q]+" required>
+
+        <br>
+
+        <h3>Informacion del usuario</h3>
+
+        <br><br>
+
+        <label for="Nombre">Nombre del cliente:</label>
+        <input type="text" name="Nombre" id="Nombre" placeholder="Felipe Zamora" pattern="[A-Z a-z á-ú Á-Ú]+" minlength="12" maxlength="30"  required>
+        
+        <br>
+
+        <label for="identificacion">Identificacion:</label>
+        <input type="text" id="Identificacion" name="Identificacion" placeholder="1030542230" minlength="10"
+        maxlength="10" pattern=[0-9]+ required> <br>
+
+        <br><br>
+
+        <label for="identificacion">Tipo identificacion:</label>
+        <select name="Tipo identificacion" id="identificacion" pattern="[A-Z a-z á-ú Á-Ú]+" required>
+          <option value="0">Seleccionar</option>
+          <option value="Cedula">CC</option>
+          <option value="Tarjeta de identidad">TI</option>
+          <option value="Cedula de extranjeria">CE</option>
+        </select>
+
+        <br><br>
+
+        <label for="Email">E-mail</label>
+        <input type="email" name="EMAIL" id="Email" required>
+      </div>
+
+      <br><br>
+
+      <input type="submit">
+
+    </form>
+  </main>
+</body>
+
+</html>
